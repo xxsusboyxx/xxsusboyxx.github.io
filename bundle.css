@@ -1,0 +1,265 @@
+
+*{
+    -webkit-font-smoothing: antialiased !important;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+
+@font-face {
+    font-family: 'gotham';
+    src: url('https://rawcdn.githack.com/awortham33/opendepo/e0e7078d0f435356ec62d9139baca59c899713ae/Gotham%20Book%20Regular.otf');
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%; 
+}
+
+body{
+    background-color:white;
+    background-image: url('./assets/sparks.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: cover;
+
+    color:black;
+    /*text-transform:uppercase;*/
+    font-family: 'gotham', sans-serif;
+    margin: 0;
+}
+
+a{
+    color:black;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.header{
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.footer{
+    text-align: center;
+    margin: 40px 0px 80px 0px;
+}
+
+
+.footer a{
+    padding: 0px 5px;
+    margin: 0;
+    color: red;
+}
+
+.icon{
+    height: 16px;
+    margin-bottom: 2px
+}
+
+.instagram-icon{
+    height: 20px;
+}
+
+ul .links{
+    text-align: right;
+}
+
+.posts{
+    margin: auto;
+    width: 100%;
+}
+
+.post{
+    width: 1175px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.posts img{
+    width:385px;
+    margin: auto;
+}
+
+
+/* -- NAV BAR -- */
+
+.nav{
+    
+    width:1175px;
+    height:50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;  
+}
+
+.nav a{
+    display:inline-block;
+    font-weight: 90;
+    font-size: 16px;
+    color:#9B9B9B;
+    padding: 0 0 0 0;
+}
+
+.nav ul{ 
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav li{
+    display:inline-block;
+    padding:0 0 0 0;
+    font-weight: 900;
+}
+
+.links {
+    float: left;
+    width: 50%;
+    padding-right: 20;
+    height: 50px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.links li a:hover{
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.link1{
+    text-align:left;
+}
+
+.link1 li{
+    padding-left: 20;
+}
+
+.link2{
+    text-align:right;
+}
+
+/* -- END NAV BAR -- */
+
+
+.headimg{
+    margin: auto;
+    margin-bottom: 15px;
+    
+}
+
+.headimg img{
+    margin: auto;
+    padding: 0px;
+    width:1175px;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+/* //// MEDIA //// */
+
+.visuals{
+    margin-top: 70px;
+    width:1175px;
+    margin: auto;
+}
+
+
+.media2{
+
+    margin: 0 auto;
+    padding: 0 0 0 0;
+
+}
+
+.media_area{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #1D1F21;
+}
+
+#video-display {
+
+    left: 0; 
+    width: 100%;
+    height: ;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+
+/* //// RESPONSIVE //// */
+
+@media screen and (max-width: 750px){
+    .post{
+        width:310px;
+        margin-top:5px;
+    }
+    
+    .post img{
+        padding:5px 0px 5px 0px;
+        width: 310px;
+    }
+    
+    .nav{
+        width: auto;
+    }
+
+    .link2{
+     display: none;
+    }
+    
+    .footer{
+        width:80%;
+        margin: auto;
+        padding: 20px 0px 30px 0px;
+    }
+    
+
+
+}
+
+@media screen and (min-width: 750px){
+    .post{
+        width:800px;
+    }
+    .nav{
+        width: 830px;
+    }
+
+
+@media screen and (min-width: 1150px){
+    .post{
+        width:1175px;
+    }
+
+    .nav{
+        width: 1175px;
+    }
+
+
+}
